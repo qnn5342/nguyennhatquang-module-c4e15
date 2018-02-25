@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>about-me</title>
+  </head>
+  <body>
+    <h1> {{aboutme}}</h1>
+    {%for i in content%}
+    <b>{{i.name}}</b>
+    <p>{{i.Work}}</p>
+    <p>{{i.School}}</p>
+    <p>{{i.Hobbies}}</p>
+    <p>{{i.Crush}}</p>
+    {% endfor %}
+
+  </body>
+</html>

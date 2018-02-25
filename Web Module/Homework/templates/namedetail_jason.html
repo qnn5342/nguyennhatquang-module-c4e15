@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>namedetail jason</title>
+  </head>
+  <body>
+    <h1>{{namedetail}}</h1>
+    {%for user in display_list%}
+    <p>{{user.Name}}</p>
+    <p>{{user.Age}}</p>
+    <p>{{user.Gender}}</p>
+    <p>{{user.Interest}}</p>
+    <p>{{user.message}}</p>
+    {% endfor %}
+    <p></p>
+  </body>
+</html>
