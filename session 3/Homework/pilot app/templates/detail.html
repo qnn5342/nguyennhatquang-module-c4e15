@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hồ sơ của em</title>
+  </head>
+  <body>
+    <h1>Your selected profile : {{services_to_show.name}}</h1>
+    <img src="{{services_to_show.image}}" alt="" style="width:300px">
+    <p><b>Tên em là: </b>{{services_to_show.name}}</p>
+    <p><b>Năm sinh: </b>{{services_to_show.yob}}</p>
+    <p><b>Giới tính: </b>{{"Nữ" if services_to_show.gender == 1}}</p>
+    <p><b>Chiều cao: </b>{{services_to_show.height}}</p>
+    <p><b>Địa chỉ: </b>{{services_to_show.address}}</p>
+    <p><b>Ưu điểm của em: </b>{{services_to_show.description}}</p>
+    <p><b>Số đo ba vòng: </b>{{services_to_show.measurements.0}} - {{services_to_show.measurements.1}} - {{services_to_show.measurements.2}}</p>
+    <p><b>Trạng thái: </b>{{"Đèn xanh - Sẵn sàng" if services_to_show.status == True else "Đèn đỏ"}}</p>
+    </body>
+</html>
