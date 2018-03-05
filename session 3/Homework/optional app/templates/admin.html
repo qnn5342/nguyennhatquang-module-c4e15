@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Warm Winter</title>
+  </head>
+  <body>
+      <h1>Admin - Làm sao cho ấm?</h1>
+      <table border="1px">
+      <thead>
+              <th>No.</th>
+              <th>Name</th>
+              <th>Yob</th>
+              <th>Gender</th>
+              <th>Height</th>
+              <th>phone</th>
+              <th>address</th>
+              <th>status</th>
+              <th> action </th>
+      </thead>
+      <tbody>
+        {%for service in services%}
+        <tr>
+          <td>{{loop.index}}</td>
+          <td>{{service.name}}</td>
+          <td>{{service.yob}}</td>
+          <td>
+            {{ "Female" if service.gender == 1 else "Male"}}
+          </td>
+          <td>{{service.height}}</td>
+          <td>{{service.phone}}</td>
+          <td>{{service.address}}</td>
+          <td>{{"Available" if service.status == True else "N/A"}}</td>
+          <td>
+            <a href="{{url_for ('update',service_id = service.id) }}">Edit</a>
+            <a href="{{url_for ('delete', service_id = service.id) }}">Delete</a>
+          </td>
+        </tr>
+        {% endfor %}
+          <p></p>
+
+      </tbody>
+      </table>
+          <a href="{{url_for ('created') }}">Thêm chăn 37 độ?</a>
+  </body>
+</html>
