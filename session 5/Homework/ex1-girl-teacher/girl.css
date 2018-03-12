@@ -1,0 +1,134 @@
+
+div{
+  color: white ;
+  font-weight: bold;
+}
+
+.d-flex{
+  display: flex;
+  /* background: #ccc; */
+  padding: 10px;
+  flex-flow: row wrap;
+  height: 500px;
+  justify-content: space-around;
+}
+
+
+.teacher-box{
+  float:left;
+  width: 22 %;
+  height: 100%;
+  /* background: blue; */
+  /* padding: 10px; */
+  border: 10px;
+  font-size: 15px;
+
+}
+
+#put-center{
+  height: auto;
+  width: 80%;
+  margin: 0 auto;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  bottom: 5%;
+  right: 0;
+}
+
+
+.background{
+  background-image: url("http://deskbg.com/s3/wpp/0/638/nighttime-desktop-background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.border-line-top{
+  width: 60%;
+}
+
+#link1{
+  background-image: url("https://znews-photo-td.zadn.vn/w660/Uploaded/ohunua2/2017_02_24/tulinh.jpg");
+
+}
+
+#link2{
+  background-image: url("http://media.baohaiduong.vn/files/library/images/site-1/20180125/web/duong-cong-van-nguoi-me-cua-hoa-hau-do-my-linh-31-085229.jpg");
+
+}
+
+#link3{
+  background-image: url("https://kenh14cdn.com/2017/18838922-1725190380841494-1962991820630480474-n-1501510500052.jpg");
+
+}
+
+
+#link4{
+  background-image: url("http://static2.yan.vn/YanNews/2167221/201711/20171104-055947-ly-do-midu-chia-tay-phan-thanh-1-ngoisaovn-w660-h959.JPG");
+}
+
+.pic-size{
+  background-size: cover;
+  height: 60%;
+  width: 215px;
+
+
+}
+
+ul {
+  list-style: None;
+}
+
+.circle-border{
+    border-radius: 100%;
+    padding: 10px;
+  }
+
+.center-page{
+
+      margin: auto;
+      position: absolute;
+      top: 12.5%;
+      left: 0;
+      bottom: 12.5%;
+      right: 0;
+}
+
+.bold-text{
+font-weight: bold;
+}
+
+.center-text{
+text-align: center;
+padding: 5px;
+top: auto;
+font-size: 15px;
+
+}
+
+.white-text{
+  color: white;
+}
+
+.bigger-font{
+  font-size: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.smaller-font {
+
+}
+
+.uppercase{
+  text-transform: uppercase;
+
+
+}
+
+
+
+.float-left{
+  float:left;
+
+}
